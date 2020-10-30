@@ -5,7 +5,7 @@ pipeline{
             steps{
                 //Git clone
                 sh "chmod +x ./git-clone.sh"
-                sh "./git-clone.sh"
+                sh ".jenkins-scripts/git-clone.sh"
             }
         }
     }
