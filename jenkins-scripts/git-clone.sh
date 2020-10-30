@@ -1,3 +1,6 @@
 #! /bin/bash
 
-git clone https://github.com/Reece-elder/qa-jenkins-exercise.git
+if ![ -d qa-jenkins-exercise.git ]; then
+    git clone https://github.com/Reece-elder/qa-jenkins-exercise.git
+fi
+
