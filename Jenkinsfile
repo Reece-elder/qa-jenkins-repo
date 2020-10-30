@@ -8,5 +8,11 @@ pipeline{
                 sh "jenkins-scripts/git-clone.sh"
             }
         }
+        stage('install docker and compose'){
+            steps{
+                sh "chmod +x jenkins-scripts/docker-install.sh"
+                sh "jenkins-scripts/docker-install.sh"
+            }
+        }
     }
 }
